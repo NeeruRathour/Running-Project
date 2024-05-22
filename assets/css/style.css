@@ -17,7 +17,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2p #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 header a{
     text-decoration: none;
@@ -39,12 +39,7 @@ body {
     font-family: 'Lato' , sans-serif;
 }
 
-/* Main content */
-main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-}
+
 /* menu */
 #menu { font-size: 110%;
     letter-spacing: 4px;
@@ -58,6 +53,24 @@ main {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* Main content */
+main {
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+/* navbar styles with dropdown toggle */
+nav {
+position: absolute;
+background-color: #ffffff;
+width: 100%;
+left: 0;
+padding: 0 1rem;
+box-shadow: 0 2px 2px #3a3a3a;
+display: none;
+}
+
 
 /* Footer */
 footer {
