@@ -26,13 +26,6 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
-/* hidden class */
-.hidden-heading {
-display: none;
-
-}
-
-
 
 /* Header */
 header {
@@ -166,6 +159,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 /* Meetup Times section */
 #times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
@@ -192,6 +186,16 @@ main {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -214,7 +218,6 @@ main {
         column-gap: 0;
     }
 }
-
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -276,12 +279,21 @@ main {
         align-self: flex-end;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
